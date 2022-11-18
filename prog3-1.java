@@ -1,15 +1,21 @@
-class Convert
+import java.util.*;
+class ConvToFar{
+double t,c;
+void process(double t)
 {
-	double c,f;
-	void convertToCelsius(double f){
-		c=(5*(f-32))/9;
-		System.out.println("fahrenheit temperature="+f+"\ncelsius temperature="+c);
-	}
+  c=(5*(t-32))/9;
+  System.out.println("Temparature in celsius is:"+c);
+
 }
-class Prog4
-{
-	public static void main(String args[]){
-		Convert obj=new Convert();
-		obj.convertToCelsius(93.4);
-	}
+
+
+}
+class Temp{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter temparature in farenhite ");
+double d=sc.nextDouble();
+ConvToFar obj=new ConvToFar();
+obj.process(d);
+}
 }

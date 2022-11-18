@@ -1,7 +1,6 @@
-class Prog1
+class Name{
+public static void main(String[] args)
 {
-	public static void main(String args[])
-	{
-		System.out.println("Raktim Bar");
-	}
+  System.out.println("Raktim Bar");
 }
+   }
